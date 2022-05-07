@@ -18,6 +18,6 @@ setuptools.setup(
     ],
     python_requires='>=3.4',
     py_modules=["src"],
-    package_dir={'':'src/src'},
+    package_dir={'':'locass/src'},
     install_requires=[]
 )
