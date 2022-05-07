@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="locass",
+    name="src",
     version="Beta 0.1",
     author="NightlyShelf",
     description="Simple localization manager",
@@ -17,7 +17,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.4',
-    py_modules=["locass"],
-    package_dir={'':'locass/src'},
+    py_modules=["src"],
+    package_dir={'':'src/src'},
     install_requires=[]
 )
