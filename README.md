@@ -10,10 +10,13 @@
 ```
 [k]HW![v]Привет Мир!
 ```
-#### Step 3: Install and import this module in your project. Details about installing is on Installing page
-#### Step 4: configure module, using 
+#### Step 3: Install and import this module in your project. Details about installing is on Installing page. Next, create a LocalManager object. Use expression like this:
 ```python
-configure() 
+man = locass.LocalManager()
+```
+#### Step 4: configure localization manager, using 
+```python
+man.configure() 
 ```
 #### function. First argument is the path, where your localization files are, for example "./locals/"
 > NOTE: Please, don't lose "/" symbols!
@@ -27,23 +30,23 @@ configure()
 ```[k]HW![v]Hello World!```
 #### your call will be like:
 ```python
-configure("./locals/",{"RU": "ru.lang", "EN":"en.lang"},"[k]","[v]")
+man.configure("./locals/",{"RU": "ru.lang", "EN":"en.lang"},"[k]","[v]")
 ```
 #### Step 5: Load language to use, using ```loadLang(key)``` where key is localization name from previous step, for example "RU":
 ```python
-loadLang("RU")
+man.loadLang("RU")
 ```
 #### Step 6: Use it in your code, and when you need string from selected localization, only call ```g(key)```, where key from your localization file. For example after steps above we can call next:
 ```python
-g("HW!") #Returns Привет Мир!
+man.g("HW!") #Returns Привет Мир!
 ```
 > Note: To change the loaded language, only call loadLang again with new argument, for example 
 > ```python
-> configure("./locals/",{"RU": "ru.lang", "EN":"en.lang"},"[k]","[v]")
-> loadLang("RU")
-> g("HW!") #Returns Привет Мир!
-> loadLang("EN")
-> g("HW!") #Returns Hello World!
+> man2.configure("./locals/",{"RU": "ru.lang", "EN":"en.lang"},"[k]","[v]")
+> man2.loadLang("RU")
+> man2.g("HW!") #Returns Привет Мир!
+> man2.loadLang("EN")
+> man2.g("HW!") #Returns Hello World!
 >```
 ## Installing
 #### Now only available from source code. Later you can download it from PyPi, but now it isn`t available.
