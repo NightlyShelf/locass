@@ -49,8 +49,11 @@ man.g("HW!") #Returns Привет Мир!
 > man2.g("HW!") #Returns Hello World!
 >```
 ## Installing
-#### Now only available from source code. Later you can download it from PyPi, but now it isn`t available.
+#### Get it form PyPi: https://pypi.org/project/locass/ or in terminal run
+```pip install locass```
+#### or
+```pip3 install locass```
 ## Tests
-#### Try and see how the library works only running ```tests/test.py```.
+#### Try and see how the library works only running ```tests/test.py```. Run it only after installing the library or it won't work.
 ## Bugs and errors
-#### Now library is only under development so we asking you to tell us about every bug or error you found. You should consider that library is unstable and can cause some errors.
+#### Now library is under development so we asking you to tell us about every bug or error you found. You should consider that library is unstable and can cause some errors.
