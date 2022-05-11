@@ -1,5 +1,5 @@
 import setuptools
-
+#Basic setup.py for package instalation
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
