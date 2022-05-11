@@ -55,7 +55,7 @@ class LocalManager():
         word = None
         for line in self.langvalue:
             if (self.Keymarker + key + self.Valuemarker in line):
-                word = line[len(key) + 6:]
+                word = line[len(key) + 6:len(line)+1]
                 break
         if (word == None):
             print(
