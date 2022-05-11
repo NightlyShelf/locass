@@ -55,14 +55,15 @@ class LocalManager():
         word = None
         for line in self.langvalue:
             if (self.Keymarker + key + self.Valuemarker in line):
-                word = line[len(key) + 6:len(line)+1]
+                word = line[len(key) + 6:]
+                word.replace("\n","")
+                word.replace("\r", "")
                 break
         if (word == None):
             print(
                 "[ERROR] Couldn't load correct word in selected localization. Try to change another language or reinstall the application. Details: requested key:",
                 key)
         else:
-            word = word[:len(word) - 1]
             return word
 
 

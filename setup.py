@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="locass",
-    version="1.0.0",
+    version="1.0.4",
     author="NightlyShelf",
     description="Simple localization manager",
     long_description=long_description,
