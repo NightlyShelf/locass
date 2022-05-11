@@ -9,7 +9,6 @@ Source code: Available on Github
 Have a nice coding!
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 """
-
 class LocalManager():
     def __init__(self):
         self.Path = "./test-locals/"
