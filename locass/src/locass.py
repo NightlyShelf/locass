@@ -1,49 +1,15 @@
 """
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Simple Localization Manager writed on Python
-version 1.0
+version Beta 0.1
 Copyright © Shchur Artem 2022
 License: MIT License
 Source code: Available on Github
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-How to use:
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Step 1: Create a folder with your localization files and add path to it on variable PATH below
-Step 2: Create localization files using your own markers or use default, markdown is:
-KEYMARKER(keyvalue)VALUEMARKER(value)
-for example:
-[k]HW![v]Привет Мир!
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-How to use in your project:
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Step 1: Import this module in your project;
-Step 2: Configure module, using configure() function.
-First argument is the path, where your localization files are, for example "./test-test-locals/"
-NOTE: Please, don't lose "/" symbols!
-Second argument is the dictionary, which contains the localization name as a key and name of file as a value, for example {"RU": "ru.lang", "EN": "en.lang"}
-Third is the Keymarker of your markdown you used in localization files, for example "[k]"
-Last is the Valuemarker of your markdown, for example "[v]"
-
-So if you used next markdown of localization flies:
-file ru.lang in ./test-test-locals/ with inside
-[k]HW![v]Привет Мир!
-and file en.lang in the same directory with inside
-[k]HW![v]Hello World!
-your call will be like:
-configure("./test-test-locals/",{"RU": "ru.lang"},"[k]","[v]")
-
-Step 3: Load language, using loadLang(key), where key is key of language you declared in configured dictionary, for example:
-loadLang("EN")
-of course, you can reload it to change the language later
-
-And now you can use it freely, to get the word ot phrase from localization, only use g(key), where key is key you declared
-in your localization file. For example:
-g("HW!") //returns Привет Мир!
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Have a nice coding!
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 """
 
-#NOTE: Here is default and TEST-only values, they will be changed after configure() call
 class LocalManager():
     def __init__(self):
         self.Path = "./test-locals/"
